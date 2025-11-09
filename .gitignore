@@ -1,24 +1,89 @@
-*.log
-.DS_Store
+# ============================================
+# Laravel & PHP ignores
+# ============================================
+
+/vendor/
 .env
-.env.backup
-.env.production
-.phpactor.json
+.env.*
+/.env.backup
+Homestead.yaml
+Homestead.json
+/.vagrant
 .phpunit.result.cache
-/.fleet
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
-/auth.json
-/node_modules
-/public/build
-/public/hot
+.phpactor.json
+auth.json
+composer.lock
+
+# ============================================
+# Laravel Framework Specific
+# ============================================
+
+/bootstrap/cache/*.php
 /public/storage
 /storage/*.key
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
 /storage/pail
-/vendor
-Homestead.json
-Homestead.yaml
+
+# ============================================
+# Frontend (Node, NPM, Vite)
+# ============================================
+
+/node_modules/
+/public/hot
+/public/build
+/public_html/hot
+/public_html/storage
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+vite.config.ts.timestamp-*
+.vite
+/.parcel-cache
+
+# ============================================
+# IDEs & OS Files
+# ============================================
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# PhpStorm
+.idea/
+*.iml
+
+# OS
+.DS_Store
 Thumbs.db
+
+# ============================================
+# Logs & backups
+# ============================================
+
+*.log
+*.sql
+*.sqlite
+*.bak
+*.tmp
+*.cache
+*.tar.gz
+*.zip
+
+# ============================================
+# Octane / Reverb (optional runtime)
+# ============================================
+
+/storage/octane
+/storage/reverb
+
+# ============================================
+# Custom backups
+# ============================================
+
+/backup/
+.env.backup
+.env.production
